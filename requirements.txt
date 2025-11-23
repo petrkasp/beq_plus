@@ -1,0 +1,5 @@
+datasets~=4.4.1
+lean-interact==0.10.0
+rich~=14.2.0
+tqdm~=4.67.1
+scikit-learn~=1.7.2
