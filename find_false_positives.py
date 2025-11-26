@@ -442,11 +442,13 @@ def proofnetverif(metric, n_samples=100):
     repl_config = LeanREPLConfig(project=TempRequireProject(lean_version="v4.8.0", require="mathlib"), verbose=True)
     server = AutoLeanServer(config=repl_config)
 
-    dataset = load_dataset("PAug/ProofNetVerif", split="valid")
-    dataset = dataset.shuffle(seed=42).select(range(n_samples))
+    dataset = load_dataset("PAug/ProofNetVerif", split="test")
+    dataset = dataset.filter(lambda example: not example["correct"])
+
+    false_positives = []
 
     metric_results = []
-    for example in tqdm(dataset, desc=f"`{metric.__name__}` metric on ProofNetVerif dataset"):
+    for i, example in tqdm(enumerate(dataset), desc=f"`{metric.__name__}` metric on ProofNetVerif dataset"):
         metric_results.append(
             metric(
                 example["lean4_formalization"],
@@ -458,6 +460,12 @@ def proofnetverif(metric, n_samples=100):
             )
         )
 
+        result = metric_results[-1]
+        false_positive = result and not example["correct"]
+        if false_positive:
+            false_positives.append(i)
+            print(f"Yaay!False positive at {i}")
+
     # Compute metrics
     y_true = dataset["correct"]
     y_pred = metric_results
@@ -468,13 +476,14 @@ def proofnetverif(metric, n_samples=100):
     table.add_row("F1 Score", f"{f1_score(y_true, y_pred):.2%}")
     console.print(table)
 
+    console.print("False positives:", false_positives)
 
 if __name__ == "__main__":
     # metric_fun = beql
     metric_fun = beq_plus
 
-    examples_limitations(metric_fun)
-    # proofnetverif(metric_fun)
+    # examples_limitations(metric_fun)
+    proofnetverif(metric_fun)
 
     # To run the metrics faster on a dataset, we recommend using a parallelized version.
     # Be careful with memory usage, as it can quickly become a bottleneck

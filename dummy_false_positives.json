@@ -1,0 +1,23 @@
+[
+  {
+    "id": "Herstein|exercise_2_5_52",
+    "nl_statement": "Let $G$ be a finite group and $\\varphi$ an automorphism of $G$ such that $\\varphi(x) = x^{-1}$ for more than three-fourths of the elements of $G$. Prove that $\\varphi(y) = y^{-1}$ for all $y \\in G$, and so $G$ is abelian.",
+    "lean4_src_header": "import Mathlib\n\nopen Fintype Set Real Ideal Polynomial\nopen scoped BigOperators\n\n",
+    "lean4_formalization": "theorem exercise_2_5_52 {G : Type*} [Group G] [Fintype G]\n  (φ : G ≃* G) {I : Finset G} (hI : ∀ x ∈ I, φ x = x⁻¹)\n  (hI1 : (0.75 : ℚ) * card G ≤ card I) :\n  (∀ x : G, φ x = x⁻¹) ∧ ∀ x y : G, x*y = y*x :=",
+    "lean4_prediction": "theorem dummy {G : Type*} [Group G] [Fintype G] (φ : G ≃* G) (hφ : ∃ S : Finset G, S.card > (3 * Fintype.card G) / 4 ∧ ∀ x ∈ S, φ x = x⁻¹) : ∀ y : G, φ y = y⁻¹ ∧ ∀ a b : G, a * b = b * a := sorry"
+  },
+  {
+    "id": "Artin|exercise_2_3_2",
+    "nl_statement": "Prove that the products $a b$ and $b a$ are conjugate elements in a group.",
+    "lean4_src_header": "import Mathlib\n\nopen Function Fintype Subgroup Ideal Polynomial Submodule Zsqrtd\nopen scoped BigOperators\n\n",
+    "lean4_formalization": "theorem exercise_2_3_2 {G : Type*} [Group G] (a b : G) :\n  ∃ g : G, b* a = g * a * b * g⁻¹ :=",
+    "lean4_prediction": "theorem dummy {G : Type*} [Group G] (a b : G) : ∃ g : G, g * (a * b) * g⁻¹ = b * a := sorry"
+  },
+  {
+    "id": "Rudin|exercise_5_1",
+    "nl_statement": "Let $f$ be defined for all real $x$, and suppose that $|f(x)-f(y)| \\leq (x-y)^{2}$ for all real $x$ and $y$. Prove that $f$ is constant.",
+    "lean4_src_header": "import Mathlib\n\nopen Topology Filter Real Complex TopologicalSpace Finset\nopen scoped BigOperators\n\n",
+    "lean4_formalization": "theorem exercise_5_1\n  {f : ℝ → ℝ} (hf : ∀ x y : ℝ, |(f x - f y)| ≤ (x - y) ^ 2) :\n  ∃ c, f = λ x => c :=",
+    "lean4_prediction": "theorem dummy {f : ℝ → ℝ} (h : ∀ x y : ℝ, |f x - f y| ≤ (x - y)^2) : ∃ c : ℝ, ∀ x : ℝ, f x = c := sorry"
+  }
+]

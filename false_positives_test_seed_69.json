@@ -1,0 +1,30 @@
+[
+  {
+    "id": "Dummit-Foote|exercise_9_4_2a",
+    "nl_statement": "Prove that $x^4-4x^3+6$ is irreducible in $\\mathbb{Z}[x]$.",
+    "lean4_src_header": "import Mathlib\n\nopen Fintype Subgroup Set Polynomial Ideal\nopen scoped BigOperators\n\n",
+    "lean4_formalization": "theorem exercise_9_4_2a : Irreducible (X^4 - 4*X^3 + 6 : Polynomial ℤ) :=",
+    "lean4_prediction": "theorem dummy : Irreducible (Polynomial.C (6 : ℤ) + Polynomial.C (-4 : ℤ) * Polynomial.X ^ 3 + Polynomial.X ^ 4) := sorry"
+  },
+  {
+    "id": "Dummit-Foote|exercise_1_1_4",
+    "nl_statement": "Prove that the multiplication of residue class $\\mathbb{Z}/n\\mathbb{Z}$ is associative.",
+    "lean4_src_header": "import Mathlib\n\nopen Fintype Subgroup Set Polynomial Ideal\nopen scoped BigOperators\n\n",
+    "lean4_formalization": "theorem exercise_1_1_4 (n : ℕ) (a b c : ZMod n) :\n  (a * b) * c = a * (b * c) :=",
+    "lean4_prediction": "theorem dummy (n : ℕ) (a b c : ℕ) : (a * b) % n * (c % n) % n = a * b * c % n := sorry"
+  },
+  {
+    "id": "Rudin|exercise_2_19a",
+    "nl_statement": "If $A$ and $B$ are disjoint closed sets in some metric space $X$, prove that they are separated.",
+    "lean4_src_header": "import Mathlib\n\nopen Topology Filter Real Complex TopologicalSpace Finset\nopen scoped BigOperators\n\n",
+    "lean4_formalization": "theorem exercise_2_19a {X : Type*} [MetricSpace X]\n  (A B : Set X) (hA : IsClosed A) (hB : IsClosed B) (hAB : Disjoint A B) :\n  SeparatedNhds A B :=",
+    "lean4_prediction": "   theorem dummy          {X : Type*} [MetricSpace X]    {A B : Set X} (hA : IsClosed A) (hB : IsClosed B) (h_disjoint : A ∩ B = ∅) : Disjoint A B := sorry"
+  },
+  {
+    "id": "Rudin|exercise_1_1b",
+    "nl_statement": "If $r$ is rational $(r \\neq 0)$ and $x$ is irrational, prove that $rx$ is irrational.",
+    "lean4_src_header": "import Mathlib\n\nopen Topology Filter Real Complex TopologicalSpace Finset\nopen scoped BigOperators\n\n",
+    "lean4_formalization": "theorem exercise_1_1b\n(x : ℝ)\n(y : ℚ)\n(h : y ≠ 0)\n: ( Irrational x ) -> Irrational ( x * y ) :=",
+    "lean4_prediction": "theorem dummy {r : ℚ} (hr : r ≠ 0) {x : ℝ} (hx : ¬ Irrational x) : ¬ Irrational (r * x) := sorry"
+  }
+]
