@@ -1,7 +1,7 @@
 import json
 import time
 
-from lean_interact import AutoLeanServer, Command, LeanREPLConfig
+from lean_interact import AutoLeanServer, LeanREPLConfig
 from lean_interact.project import TempRequireProject
 
 from beq_plus import beq_plus
