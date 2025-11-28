@@ -1,0 +1,30 @@
+# Human Equivalence
+
+## o1-generated
+True positives: 26
+False positives: 0
+False negatives: 13
+True negatives: 61
+Accuracy: 0.87
+Precision: 1.0
+Recall: 0.6666666666666666
+F1: 0.8
+
+## rautoformalizer-generated
+True positives: 27
+False positives: 1
+False negatives: 4
+True negatives: 68
+Accuracy: 0.95
+Precision: 0.9642857142857143
+Recall: 0.8709677419354839
+F1: 0.9152542372881356
+
+## Total
+True positives: 53
+False positives: 1
+False negatives: 17
+True negatives: 129
+Accuracy: 0.9100
+Precision: 0.9815
+Recall: 0.7571

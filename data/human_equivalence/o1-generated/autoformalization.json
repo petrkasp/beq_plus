@@ -1,0 +1,802 @@
+{
+    "Rudin.exercise_1_17": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  (k : \u2115)\n  (x y : Fin k \u2192 \u211d)\n  : \u2016x + y\u2016 ^ 2 + \u2016x - y\u2016 ^ 2 = 2 * \u2016x\u2016 ^ 2 + 2 * \u2016y\u2016 ^ 2 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Putnam.exercise_2020_b5": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (z\u2081 z\u2082 z\u2083 z\u2084 : \u2102)\n    (hz\u2081 : Complex.abs z\u2081 = 1 \u2227 z\u2081 \u2260 1)\n    (hz\u2082 : Complex.abs z\u2082 = 1 \u2227 z\u2082 \u2260 1)\n    (hz\u2083 : Complex.abs z\u2083 = 1 \u2227 z\u2083 \u2260 1)\n    (hz\u2084 : Complex.abs z\u2084 = 1 \u2227 z\u2084 \u2260 1)\n    : 3 - z\u2081 - z\u2082 - z\u2083 - z\u2084 + z\u2081 * z\u2082 * z\u2083 * z\u2084 \u2260 0 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Putnam.exercise_1998_b6": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  (a b c : \u2124) :\n  \u2203 n : \u2115, 0 < n \u2227 \u2200 k : \u2124, n^3 + a * n^2 + b * n + c \u2260 k^2 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Artin.exercise_2_8_6": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  (G H : Type*)\n  [Group G] [Group H]\n  : Subgroup.center (G \u00d7 H) = (Subgroup.center G).prod (Subgroup.center H) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Munkres.exercise_22_2b": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    {X : Type*} [TopologicalSpace X]\n    {A : Set X}\n    (r : X \u2192 X)\n    (hr_cont : Continuous r)\n    (hr_restr : \u2200 a \u2208 A, r a = a)\n    (hr_img : \u2200 x, r x \u2208 A)\n    : QuotientMap r := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Herstein.exercise_5_1_8": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (F : Type*) [Field F] (p : \u2115) [CharP F p] [NeZero p]\n    (n : \u2115) (hn : n > 0)\n    (m : \u2115 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_2_1_13": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (H : AddSubgroup \u211a)\n    (hH : \u2200 x \u2208 H, x \u2260 0 \u2192 1 / x \u2208 H)\n    : H = \u22a5 \u2228 H = \u22a4 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Rudin.exercise_5_6": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  (f : \u211d \u2192 \u211d)\n  (hf_cont : ContinuousOn f (Set.Ici 0))\n  (hf_diff : DifferentiableOn \u211d f (Set.Ioi 0))\n  (hf0 : f 0 = 0)\n  (hf'_mono : MonotoneOn (fun x => deriv f x) (Set.Ioi 0))\n  (g : \u211d \u2192 \u211d := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Rudin.exercise_5_5": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (f : \u211d \u2192 \u211d)\n    (hf_diff : DifferentiableOn \u211d f (Set.Ioi 0))\n    (hf_tendsto : Tendsto (fun x \u21a6 deriv f x) atTop (\ud835\udcdd 0))\n    (g : \u211d \u2192 \u211d := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Artin.exercise_6_4_2": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (p q : \u2115)\n    (hp : Nat.Prime p)\n    (hq : Nat.Prime q)\n    (G : Type _) [Group G] [Fintype G]\n    (hG : Fintype.card G = p * q)\n    : \u00acIsSimpleGroup G := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_2_1_5": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Group G]\n    (hG : Finite G)\n    (n : \u2115 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Artin.exercise_2_11_3": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  [Group G]\n  (hG : Finite G)\n  (h_even : Even (Nat.card G))\n  : \u2203 g : G, g \u2260 1 \u2227 g ^ 2 = 1 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_1_1_25": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Group G]\n    (h : \u2200 x : G, x * x = 1)\n    : \u2200 x y : G, x * y = y * x := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_3_2_21a": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (H : AddSubgroup \u211a)\n    (hH : H \u2260 \u22a4)\n    : Infinite (\u211a \u29f8 H) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Rudin.exercise_3_20": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (X : Type)\n    [MetricSpace X]\n    (p_n : \u2115 \u2192 X)\n    (hc : CauchySeq p_n)\n    (p : X)\n    (n_l : \u2115 \u2192 \u2115)\n    (hnl : StrictMono n_l)\n    (h_subseq : Tendsto (p_n \u2218 n_l) atTop (\ud835\udcdd p))\n    : Tendsto p_n atTop (\ud835\udcdd p) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_2_4_4": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Group G]\n    (H : Subgroup G)\n    : H = Subgroup.closure (H \\ {1}) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Ireland-Rosen.exercise_4_5": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (p : \u2115)\n    (hp : Nat.Prime p \u2227 p \u2261 3 [MOD 4])\n    (a : (ZMod p)\u02e3)\n    : IsPrimitiveRoot a (p - 1) \u2194 orderOf (-a) = (p - 1) / 2 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Herstein.exercise_2_1_26": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Group G]\n    (hG : Finite G)\n    (a : G)\n    : \u2203 n : \u2115, n > 0 \u2227 a ^ n = 1 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_1_1_3": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (n : \u2115)\n    : \u2200 a b c : ZMod n, (a + b) + c = a + (b + c) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_7_1_15": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (R : Type*) [Ring R]\n    (h : \u2200 a : R, a * a = a)\n    : \u2200 a b : R, a * b = b * a := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_9_1_6": [
+        {
+            "formal_stmt_pred": "theorem thm_Q :\n  \u00ac \u2203 (f : MvPolynomial (Fin 2) \u211a), Ideal.span ({MvPolynomial.X 0, MvPolynomial.X 1} : Set (MvPolynomial (Fin 2) \u211a)) = Ideal.span {f} := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Axler.exercise_5_1": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  {R : Type*} [Ring R]\n  {V : Type*} [AddCommGroup V] [Module R V]\n  {m : \u2115}\n  (T : V \u2192\u2097[R] V)\n  (U : Fin m \u2192 Submodule R V)\n  (hU : \u2200 i, \u2200 v \u2208 U i, T v \u2208 U i)\n  : \u2200 v \u2208 (\u2a06 i, U i), T v \u2208 (\u2a06 i, U i) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_1_1_2a": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (star : \u2124 \u2192 \u2124 \u2192 \u2124 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Shakarchi.exercise_3_3": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (a : \u211d)\n    (ha : 0 < a)\n    : \u222b x : \u211d, (Real.cos x) / (x^2 + a^2) = \u03c0 * Real.exp (-a) / a := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Munkres.exercise_27_4": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (X : Type)\n    [MetricSpace X]\n    [ConnectedSpace X]\n    [Nontrivial X]\n    : \u00ac Countable X := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Herstein.exercise_2_1_21": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Group G]\n    [Finite G]\n    (hG : Nat.card G = 5)\n    : IsCommutative G Mul.mul := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Rudin.exercise_2_29": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  (U : Set \u211d) (hU : IsOpen U) :\n  \u2203 I : Set (Set \u211d), (\u2200 s \u2208 I, \u2203 a b : \u211d, s = Set.Ioo a b) \u2227 U = \u22c3\u2080 I \u2227 I.PairwiseDisjoint id \u2227 I.Countable := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Rudin.exercise_3_3": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (s : \u2115 \u2192 \u211d)\n    (hs1 : s 1 = Real.sqrt 2)\n    (hs_rec : \u2200 n \u2265 1, s (n + 1) = Real.sqrt (2 + Real.sqrt (s n)))\n    : (\u2200 n \u2265 1, s n < 2) \u2227 \u2203 l : \u211d, Tendsto s atTop (\ud835\udcdd l) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Herstein.exercise_4_5_25": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  (p : \u2115)\n  (hp : Nat.Prime p)\n  : Irreducible (cyclotomic p \u211a) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Rudin.exercise_4_4b": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    {X Y : Type _} [MetricSpace X] [MetricSpace Y]\n    (f g : X \u2192 Y)\n    (hf : Continuous f)\n    (hg : Continuous g)\n    (E : Set X)\n    (hE : Dense E)\n    (hfgE : \u2200 p \u2208 E, g p = f p)\n    : \u2200 p : X, g p = f p := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Ireland-Rosen.exercise_4_11": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (p k : \u2115)\n    (hp : Nat.Prime p)\n    : \u2211 i in Finset.range (p - 1), ((i + 1) : ZMod p) ^ k =\n        if (p - 1) \u2223 k then (-1 : ZMod p) else 0 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_9_4_9": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  (R : Type*) [CommRing R] [IsDomain R] [UniqueFactorizationMonoid R]\n  (sqrt2 : R)\n  (hsqrt2 : sqrt2 * sqrt2 = 2)\n  : Irreducible (Polynomial.X ^ 2 - Polynomial.C sqrt2) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Axler.exercise_1_7": [
+        {
+            "formal_stmt_pred": "theorem thm_Q :\n  \u2203 (U : Set (\u211d \u00d7 \u211d)),\n    U.Nonempty \u2227\n    (\u2200 (a : \u211d) (u : \u211d \u00d7 \u211d), u \u2208 U \u2192 a \u2022 u \u2208 U) \u2227\n    \u00ac (\u2203 (M : Submodule \u211d (\u211d \u00d7 \u211d)), M.carrier = U) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Artin.exercise_11_4_1b": [
+        {
+            "formal_stmt_pred": "theorem thm_Q :\n  Irreducible (Polynomial.X ^ 3 + 6 * Polynomial.X + 12 : Polynomial \u211a) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Herstein.exercise_2_5_37": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (G : Type u)\n    [Group G]\n    [Fintype G]\n    (h_order6 : Fintype.card G = 6)\n    (h_nonabelian : \u00ac (\u2200 x y : G, x * y = y * x))\n    : G \u2243* Equiv.Perm (Fin 3) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Herstein.exercise_4_2_6": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  [Ring R]\n  (a x : R)\n  (h : a ^ 2 = 0)\n  : (a * x + x * a) * a = a * (a * x + x * a) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Putnam.exercise_2018_a5": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  (f : \u211d \u2192 \u211d)\n  (hf_smooth : ContDiff \u211d \u22a4 f)\n  (hf_zero : f 0 = 0)\n  (hf_one : f 1 = 1)\n  (hf_nonneg : \u2200 x : \u211d, 0 \u2264 f x)\n  : \u2203 n : \u2115, n > 0 \u2227 \u2203 x : \u211d, (iteratedDeriv n f) x < 0 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Munkres.exercise_23_3": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    {X : Type _} [TopologicalSpace X]\n    (A : Set X) (hA : IsConnected A)\n    (\u03b9 : Type _) (A\u03b1 : \u03b9 \u2192 Set X)\n    (hA\u03b1 : \u2200 \u03b1, IsConnected (A\u03b1 \u03b1))\n    (hInter: \u2200 \u03b1, (A \u2229 A\u03b1 \u03b1).Nonempty)\n    : IsConnected (A \u222a \u22c3 \u03b1, A\u03b1 \u03b1) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Ireland-Rosen.exercise_4_4": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (p t : \u2115)\n    (hp : Nat.Prime p)\n    (hp_eq : p = 4 * t + 1)\n    (a : (ZMod p)\u02e3)\n    : IsPrimitiveRoot a (p - 1) \u2194 IsPrimitiveRoot (-a) (p - 1) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_7_2_12": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Group G] [Fintype G] [CommRing R]\n    (N : MonoidAlgebra R G := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Rudin.exercise_3_22": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (X : Type _)\n    [MetricSpace X]\n    [CompleteSpace X]\n    [Nonempty X]\n    (G : \u2115 \u2192 Set X)\n    (hG : \u2200 n, IsOpen (G n) \u2227 Dense (G n))\n    : (\u22c2 n, G n).Nonempty := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Munkres.exercise_13_4b1": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (X : Type*)\n    (\u03b9 : Type*)\n    (T : \u03b9 \u2192 TopologicalSpace X)\n    : \u2203! \u03c4 : TopologicalSpace X, (\u2200 \u03b1 : \u03b9, T \u03b1 \u2264 \u03c4) \u2227 \u2200 \u03c4', (\u2200 \u03b1 : \u03b9, T \u03b1 \u2264 \u03c4') \u2192 \u03c4 \u2264 \u03c4' := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Artin.exercise_2_2_9": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  [Group G]\n  (a b : G)\n  (h : a * b = b * a)\n  (H : Subgroup G := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Rudin.exercise_2_25": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  {K : Type*} [MetricSpace K] [CompactSpace K] :\n  SecondCountableTopology K := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Herstein.exercise_2_5_43": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Group G]\n    [Fintype G]\n    (hG : Fintype.card G = 9)\n    : \u2200 a b : G, a * b = b * a := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Pugh.exercise_2_46": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  {M : Type*} [MetricSpace M]\n  {A B : Set M}\n  (hA : IsCompact A)\n  (hB : IsCompact B)\n  (hA_nonempty : A.Nonempty)\n  (hB_nonempty : B.Nonempty)\n  (h_disjoint : Disjoint A B)\n  : \u2203 a\u2080 \u2208 A, \u2203 b\u2080 \u2208 B, \u2200 a \u2208 A, \u2200 b \u2208 B, dist a\u2080 b\u2080 \u2264 dist a b := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_1_6_23": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Group G]\n    [Fintype G]\n    (\u03c3 : G \u2243* G)\n    (h\u03c3_fix : \u2200 g : G, \u03c3 g = g \u2194 g = 1)\n    (h\u03c32 : \u03c3 * \u03c3 = 1)\n    : CommGroup G := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Ireland-Rosen.exercise_4_6": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (n p : \u2115)\n    (hp : p = 2^n + 1 \u2227 Nat.Prime p)\n    : IsPrimitiveRoot (3 : ZMod p) (p - 1) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Artin.exercise_11_4_8": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (p n : \u2115)\n    (hp : Nat.Prime p)\n    (hn : n \u2265 1)\n    : Irreducible (Polynomial.X ^ n - Polynomial.C (p : \u211a)) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Munkres.exercise_23_6": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    {X : Type*} [TopologicalSpace X]\n    (A C : Set X)\n    (hC : IsConnected C)\n    (hCA : (C \u2229 A).Nonempty)\n    (hCAc : (C \u2229 A\u1d9c).Nonempty)\n    : (C \u2229 frontier A).Nonempty := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_1_1_4": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (n : \u2115)\n    : \u2200 a b c : ZMod n, (a * b) * c = a * (b * c) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Rudin.exercise_3_1a": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  (s : \u211d)\n  (s_n : \u2115 \u2192 \u211d)\n  (hs : Tendsto s_n atTop (\ud835\udcdd s))\n  : Tendsto (fun n => |s_n n|) atTop (\ud835\udcdd (|s|)) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Herstein.exercise_2_5_52": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Group G]\n    (hG : Finite G)\n    (\u03c6 : G \u2243* G)\n    (h\u03c6 : { x : G | \u03c6 x = x\u207b\u00b9 }.ncard > (3 * (Nat.card G : \u211a)) / 4)\n    : (\u2200 y : G, \u03c6 y = y\u207b\u00b9) \u2227 (\u2200 x y : G, x * y = y * x) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_2_4_16a": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Group G]\n    [Fintype G]\n    (H : Subgroup G)\n    (hH : H \u2260 \u22a4)\n    : \u2203 (M : Subgroup G),\n        H \u2264 M \u2227\n        M \u2260 \u22a4 \u2227\n        \u2200 (K : Subgroup G), M \u2264 K \u2192 K = M \u2228 K = \u22a4 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Ireland-Rosen.exercise_3_1": [
+        {
+            "formal_stmt_pred": "theorem thm_Q :\n  Set.Infinite {p : \u2115 | Nat.Prime p \u2227 p % 6 = 5} := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_4_5_17": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Group G] [Fintype G]\n    (hG : Fintype.card G = 105)\n    : \u2203 (P\u2085 : Sylow 5 G), (P\u2085 : Subgroup G).Normal \u2227\n      \u2203 (P\u2087 : Sylow 7 G), (P\u2087 : Subgroup G).Normal := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_1_6_4": [
+        {
+            "formal_stmt_pred": "theorem thm_Q :\n  \u00ac Nonempty (\u211d\u02e3 \u2243* \u2102\u02e3) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Rudin.exercise_1_12": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  (n : \u2115)\n  (z : Fin n \u2192 \u2102)\n  : Complex.abs (\u2211 i : Fin n, z i) \u2264 \u2211 i : Fin n, Complex.abs (z i) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Pugh.exercise_2_126": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (E : Set \u211d)\n    (hE : \u00ac E.Countable)\n    : \u2203 p : \u211d, \u2200 \u03b5 > 0, \u00ac (E \u2229 Metric.ball p \u03b5).Countable := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Artin.exercise_10_4_7a": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [CommRing R]\n    (I J : Ideal R)\n    (hIJ : I + J = \u22a4)\n    : I * J = I \u2293 J := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_9_4_2b": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (f : Polynomial \u2124 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_1_1_16": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Group G]\n    (x : G)\n    : x ^ 2 = 1 \u2194 orderOf x = 1 \u2228 orderOf x = 2 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Herstein.exercise_4_6_3": [
+        {
+            "formal_stmt_pred": "theorem thm_Q :\n  Set.Infinite { a : \u2124 | Irreducible (Polynomial.X^7 + 15 * Polynomial.X^2 - 30 * Polynomial.X + Polynomial.C (a : \u211a)) } := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Munkres.exercise_18_8a": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (X Y : Type*)\n    [TopologicalSpace X]\n    [TopologicalSpace Y]\n    [Preorder Y]\n    [OrderTopology Y]\n    (f g : X \u2192 Y)\n    (hf : Continuous f)\n    (hg : Continuous g)\n    : IsClosed { x | f x \u2264 g x } := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Herstein.exercise_5_3_7": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Field F] [Field K] [Algebra F K]\n    (a : K)\n    (ha2 : IsAlgebraic F (a ^ 2))\n    : IsAlgebraic F a := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Munkres.exercise_19_6a": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  {I : Type*}\n  (X : I \u2192 Type*)\n  [\u2200 \u03b1, TopologicalSpace (X \u03b1)]\n  (x_n : \u2115 \u2192 \u03a0 \u03b1, X \u03b1)\n  (x : \u03a0 \u03b1, X \u03b1)\n  : Tendsto x_n atTop (\ud835\udcdd x) \u2194 \u2200 \u03b1 : I, Tendsto (fun n \u21a6 x_n n \u03b1) atTop (\ud835\udcdd (x \u03b1)) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Rudin.exercise_4_3": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  {X : Type*} [MetricSpace X]\n  (f : X \u2192 \u211d) (hf : Continuous f) :\n  IsClosed (f \u207b\u00b9' {0}) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_9_4_2a": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  (f : Polynomial \u2124 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Munkres.exercise_22_2a": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  {X Y : Type _} [TopologicalSpace X] [TopologicalSpace Y]\n  (p : X \u2192 Y)\n  (hp : Continuous p)\n  (f : Y \u2192 X)\n  (hf : Continuous f)\n  (hpf : \u2200 y : Y, p (f y) = y)\n  : QuotientMap p := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Ireland-Rosen.exercise_12_12": [
+        {
+            "formal_stmt_pred": "theorem thm_Q : IsAlgebraic \u211a (Real.sin (Real.pi / 12)) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Axler.exercise_1_4": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Field F]\n    [AddCommGroup V] [Module F V]\n    (a : F) (v : V)\n    (h : a \u2022 v = 0)\n    : a = 0 \u2228 v = 0 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Rudin.exercise_4_12": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (X : Type)\n    (Y : Type)\n    (Z : Type)\n    [UniformSpace X]\n    [UniformSpace Y]\n    [UniformSpace Z]\n    (f : X \u2192 Y)\n    (g : Y \u2192 Z)\n    (hf : UniformContinuous f)\n    (hg : UniformContinuous g)\n    : UniformContinuous (g \u2218 f) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Herstein.exercise_2_4_36": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (a n : \u2115)\n    (ha : 1 < a)\n    (hn : 0 < n)\n    : n \u2223 Nat.totient (a^n - 1) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Munkres.exercise_34_9": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (X : Type*)\n    [TopologicalSpace X]\n    [CompactSpace X]\n    [T2Space X]\n    (X\u2081 X\u2082 : Set X)\n    (hX\u2081_closed : IsClosed X\u2081)\n    (hX\u2082_closed : IsClosed X\u2082)\n    (hCover : X\u2081 \u222a X\u2082 = Set.univ)\n    [MetrizableSpace \u21a5X\u2081]\n    [MetrizableSpace \u21a5X\u2082]\n    : MetrizableSpace X := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Putnam.exercise_2010_a4": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (n : \u2115)\n    (hn : 0 < n)\n    : \u00ac Nat.Prime (10^(10^(10^n)) + 10^(10^n) + 10^n - 1) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Herstein.exercise_2_7_7": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    {G G' : Type*} [Group G] [Group G']\n    (\u03c6 : G \u2192* G') (h\u03c6 : Function.Surjective \u03c6)\n    (N : Subgroup G) (hN : N.Normal)\n    : (N.map \u03c6).Normal := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Munkres.exercise_21_6a": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (x : \u211d)\n    (hx : x \u2208 Set.Icc 0 1)\n    : \u2203 l : \u211d, Tendsto (fun n : \u2115 \u21a6 x^n) atTop (\ud835\udcdd l) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Herstein.exercise_2_2_6c": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  [Group G]\n  (n : \u2115)\n  (hn : n > 1)\n  (h : \u2200 (a b : G), (a * b)^n = a^n * b^n)\n  : \u2200 (a b : G), (a * b * a\u207b\u00b9 * b\u207b\u00b9)^(n * (n - 1)) = 1 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Herstein.exercise_2_6_15": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [CommGroup G]\n    (m n : \u2115)\n    (hmn : Nat.Coprime m n)\n    (hg : \u2203 g : G, orderOf g = m)\n    (hh : \u2203 h : G, orderOf h = n)\n    : \u2203 k : G, orderOf k = m * n := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Artin.exercise_2_4_19": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Group G]\n    (g : G)\n    (hg : orderOf g = 2)\n    (uniq : \u2200 x : G, orderOf x = 2 \u2192 x = g)\n    : g \u2208 center G := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Herstein.exercise_4_3_25": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (I : Ideal (Matrix (Fin 2) (Fin 2) \u211d))\n    : I = \u22a5 \u2228 I = \u22a4 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_3_4_5b": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  [Group G]\n  (hG : IsSolvable G)\n  (N : Subgroup G) [Normal N]\n  : IsSolvable (G \u29f8 N) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Herstein.exercise_2_1_18": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Group G]\n    [Fintype G]\n    (hG_even : Even (Fintype.card G))\n    : \u2203 (a : G), a \u2260 1 \u2227 a = a\u207b\u00b9 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_3_4_5a": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Group G]\n    (hG : IsSolvable G)\n    (H : Subgroup G)\n    : IsSolvable H := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_1_6_11": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  [Group A] [Group B] :\n  (A \u00d7 B) \u2243* (B \u00d7 A) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Artin.exercise_10_1_13": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Ring R]\n    (x : R)\n    (h : IsNilpotent x)\n    : IsUnit (1 + x) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Herstein.exercise_5_3_10": [
+        {
+            "formal_stmt_pred": "theorem thm_Q : IsAlgebraic \u211a (Real.cos (Real.pi / 180)) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Munkres.exercise_32_2a": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  {\u03b1 : Type*} (X : \u03b1 \u2192 Type*)\n  [\u2200 a, TopologicalSpace (X a)]\n  (hprod : T2Space (\u2200 a, X a))\n  (h_nonempty : \u2200 a, Nonempty (X a))\n  : \u2200 a, T2Space (X a) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_4_5_23": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  [Group G] [Fintype G]\n  (hG : Fintype.card G = 462)\n  : \u00ac IsSimpleGroup G := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Artin.exercise_3_2_7": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Field F] [Field K]\n    (\u03c6 : F \u2192+* K) :\n    Function.Injective \u03c6 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Munkres.exercise_32_2b": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    {I : Type*}\n    (X : I \u2192 Type*)\n    [\u2200 i, TopologicalSpace (X i)]\n    (h_nonempty : \u2200 i, Nonempty (X i))\n    [h : RegularSpace (\u03a0 i, X i)]\n    : \u2200 i, RegularSpace (X i) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Putnam.exercise_2001_a5": [
+        {
+            "formal_stmt_pred": "theorem thm_Q :\n  \u2203! (a n : \u2115), 0 < a \u2227 0 < n \u2227 a^(n + 1) - (a + 1)^n = 2001 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_1_3_8": [
+        {
+            "formal_stmt_pred": "theorem thm_Q : Infinite (Equiv.Perm \u2115) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Herstein.exercise_2_5_23": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  [Group G]\n  (hG : \u2200 H : Subgroup G, H.Normal)\n  : \u2200 a b : G, \u2203 j : \u2124, b * a = a ^ j * b := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Rudin.exercise_1_14": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  (z : \u2102)\n  (hz : Complex.abs z = 1)\n  : Complex.abs (1 + z) ^ 2 + Complex.abs (1 - z) ^ 2 = 4 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Munkres.exercise_32_3": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n  (X : Type u)\n  [TopologicalSpace X]\n  [LocallyCompactSpace X]\n  [T2Space X] :\n  RegularSpace X := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Dummit-Foote.exercise_7_1_2": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    (R : Type u)\n    [Ring R]\n    (u : R)\n    (hu : IsUnit u)\n    : IsUnit (-u) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Munkres.exercise_29_1": [
+        {
+            "formal_stmt_pred": "theorem thm_Q : \u00ac LocallyCompactSpace \u211a := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Rudin.exercise_1_2": [
+        {
+            "formal_stmt_pred": "theorem thm_Q : \u00ac \u2203 x : \u211a, x ^ 2 = 12 := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ],
+    "Artin.exercise_6_8_1": [
+        {
+            "formal_stmt_pred": "theorem thm_Q\n    [Group G]\n    (a b : G)\n    : Subgroup.closure ({a, b} : Set G) = Subgroup.closure ({b * a * b^2, b * a * b^3} : Set G) := by sorry",
+            "typecheck_result": {
+                "is_success": true
+            }
+        }
+    ]
+}
