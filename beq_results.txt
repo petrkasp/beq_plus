@@ -28,3 +28,15 @@ True negatives: 129
 Accuracy: 0.9100
 Precision: 0.9815
 Recall: 0.7571
+
+  `beq_plus` metric
+      results on
+    ProofNetVerif
+┏━━━━━━━━━━━┳━━━━━━━━┓
+┃ Metric    ┃ Value  ┃
+┡━━━━━━━━━━━╇━━━━━━━━┩
+│ Accuracy  │ 84.06% │
+│ Precision │ 98.75% │
+│ Recall    │ 48.25% │
+│ F1 Score  │ 64.82% │
+└───────────┴────────┘
